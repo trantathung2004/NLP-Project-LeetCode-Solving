@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+
+# Project specific
+model_results/
+data/processed_data/
+*.csv
+*.pdf
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/ 
