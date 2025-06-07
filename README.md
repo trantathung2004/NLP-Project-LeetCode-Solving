@@ -41,13 +41,17 @@ ollama run codellama:7b-instruct
 ```
 
 ## Usage
+1. Clean the data:
+```bash
+python data/data_cleaning.py
+```
 
-1. Process the data:
+2. Process the data:
 ```bash
 python data/data_processor.py
 ```
 
-2. Run the main script:
+3. Run the main script:
 ```bash
 python main.py
 ```
