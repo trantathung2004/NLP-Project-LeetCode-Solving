@@ -65,11 +65,3 @@ python main.py
 ├── requirements.txt
 └── README.md
 ```
-
-## License
-
-[Your chosen license]
-
-## Contributing
-
-[Your contribution guidelines] 
