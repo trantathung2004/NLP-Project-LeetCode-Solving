@@ -20,8 +20,8 @@ This project uses CodeLlama-7B through Ollama to solve LeetCode problems. It imp
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd <repo-name>
+git clone https://github.com/trantathung2004/NLP-Project-LeetCode-Solving
+cd NLP-Project-LeetCode-Solving
 ```
 
 2. Create and activate a virtual environment:
