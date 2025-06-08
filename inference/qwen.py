@@ -45,7 +45,6 @@ def main(model_name, prompting_technique):
         generated_ids = [
             output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
         ]
-
         response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
         import code; code.interact(local=locals())
 
@@ -54,7 +53,7 @@ def parse_args():
 
     parser.add_argument(
         "--model_name", 
-        choices=["Qwen/Qwen2.5-Coder-3B-Instruct", "Qwen/Qwen2.5-Coder-7B-Instruct"], 
+        choices=["Qwen/Qwen2.5-Coder-3B-Instruct", "Qwen/Qwen2.5-Coder-7B-Instruct", "Qwen/Qwen2.5-Coder-3B"], 
         default="Qwen/Qwen2.5-Coder-3B-Instruct", 
         help="Choose your model"
     )
