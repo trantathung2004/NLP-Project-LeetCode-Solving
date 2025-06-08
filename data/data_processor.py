@@ -67,8 +67,8 @@ def prepare_prompt_with_examples(problem, train_df, num_examples=3):
 
 def main():
     # File paths
-    input_file = "data/processed_data/leetcode_problems_cleaned.csv"
-    output_dir = "data/processed_data/split_data"
+    input_file = "data/leetcode_cleaned.csv"
+    output_dir = "data/split_data"
     
     # Load and split data
     train_df, test_df = load_and_split_data(input_file)

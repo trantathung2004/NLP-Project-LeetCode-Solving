@@ -1,6 +1,7 @@
 import requests
 import json
 import pandas as pd
+from tqdm import tqdm
 from data.data_processor import prepare_prompt_with_examples
 from pathlib import Path
 
@@ -58,8 +59,8 @@ def process_test_set(test_file, train_file, output_file="model_results/predictio
         
         # Process each test problem
         results = []
-        for idx, row in test_df.iterrows():
-            print(f"\nProcessing problem {idx + 1}/{len(test_df)}")
+        for idx, row in tqdm(test_df.iterrows(), total=len(test_df)):
+            # print(f"\nProcessing problem {idx + 1}/{len(test_df)}")
             
             # Create prompt with examples
             prompt = create_leetcode_prompt(row['content'], train_df)
@@ -84,8 +85,8 @@ def process_test_set(test_file, train_file, output_file="model_results/predictio
 
 def main():
     # File paths
-    train_file = "data/processed_data/split_data/train_set.csv"
-    test_file = "data/processed_data/split_data/test_set.csv"
+    train_file = "data/split_data/train_set.csv"
+    test_file = "data/split_data/test_set.csv"
     output_file = "model_results/predictions.csv"
     
     # Process test set
