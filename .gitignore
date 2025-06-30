@@ -25,3 +25,6 @@ data/processed_data/
 dist/
 build/
 *.egg-info/ 
+
+# Playground
+playwithmino.py
